@@ -24,7 +24,7 @@ This script allows you to execute a CLI script on multiple Fortigate firewall de
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone https://github.com/LeandroR0J0/FTG-Multi-CLI-exec.git
+    git clone https://github.com/LeandroR0J0/FTG-Multi-CLI-exec
     ```
 
 2. Navigate to the project directory:
@@ -36,7 +36,7 @@ This script allows you to execute a CLI script on multiple Fortigate firewall de
 3. Install the required Python packages:
 
     ```bash
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
     ```
 
 ## Usage
@@ -46,7 +46,7 @@ To use this script, you need to have a CLI script file ready to be uploaded to y
 Run the script using the following command:
 
 ```bash
-python FTG-Multi-CLI-exec.py ./CLI_Script_to_Upload.txt
+python3 FTG-Multi-CLI-exec.py ./CLI_Script_to_Upload.txt
 ```
 
 This will upload the `CLI_Script_to_Upload.txt` content to all Fortigate devices listed in the fortigate_devices array and display the result of each upload in a table.

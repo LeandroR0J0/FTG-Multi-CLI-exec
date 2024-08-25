@@ -1,6 +1,6 @@
 # Script developed by Security Analyst Leandro Rojo at 24/08/2024.
 # DISCLAIMER this script has been coded and finished out of my professional working hours.
-# Feel free to modify or add as you want.
+# Feel free to modify or add many things as you want.
 # You can contact me in https://www.linkedin.com/in/rojoleandro/
 
 import requests
@@ -18,7 +18,7 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 fortigate_devices = [
     {"ip": "192.168.1.1", "api_key": "8w40hn4537kdnQmytm3f1fim1NHzHg"},
     {"ip": "192.168.1.2", "api_key": "8w40hn4537kdnQmytm3f1fim1NHzHg"},
-    # you can add as much as Firewalls as you want line by line live in the previous lines. api key and IP are ficticial ones, remember to replace it.
+    # You can add as much as Firewalls as you want line by line. (API key and IP are ficticial ones, remember to replace it.)
 ]
 
 console = Console()

@@ -46,7 +46,7 @@ To use this script, you need to have a CLI script file ready to be uploaded to y
 Run the script using the following command:
 
 ```bash
-python FTG-Multi-CLI-exec.py CLI_Script_to_Upload.txt
+python FTG-Multi-CLI-exec.py ./CLI_Script_to_Upload.txt
 ```
 
 This will upload the `CLI_Script_to_Upload.txt` content to all Fortigate devices listed in the fortigate_devices array and display the result of each upload in a table.

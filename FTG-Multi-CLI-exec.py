@@ -81,7 +81,7 @@ def main(script_path):
     console.print(upload_table)
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Upload a CLI script to all Fortigate devices registered.)
+    parser = argparse.ArgumentParser(description="Upload a CLI script to all Fortigate devices registered.")
     parser.add_argument("script_path", help="Ruote to Fortigate CLI script to execute within the FWs")
     args = parser.parse_args()
     main(args.script_path)

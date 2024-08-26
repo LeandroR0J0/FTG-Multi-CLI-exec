@@ -47,7 +47,7 @@ def upload_config_script(device, script_path):
 
 def main(script_path):
     if not os.path.exists(script_path):
-        console.print(f"[bold red]El archivo {script_path} no existe.[/bold red]")
+        console.print(f"[bold red]The file {script_path} doesn't exists[/bold red]")
         return
 
     # Execute different threads in parallel
@@ -68,11 +68,11 @@ def main(script_path):
                 upload_results.append((device['ip'], "Error", str(exc)))
 
     # Makes a table to show all uploads results
-    upload_table = Table(title="Resultados de la subida del script de configuraciÃ³n en Fortigate")
+    upload_table = Table(title="Results for the upload of Fortigate CLI Script")
 
-    upload_table.add_column("Dispositivo IP", justify="right", style="cyan", no_wrap=True)
-    upload_table.add_column("Estado", style="magenta")
-    upload_table.add_column("Respuesta", style="green")
+    upload_table.add_column("Firewall IP", justify="right", style="cyan", no_wrap=True)
+    upload_table.add_column("Status", style="magenta")
+    upload_table.add_column("Response", style="green")
 
     for result in upload_results:
         ip, status, response = result
